@@ -6,6 +6,12 @@ geometry_msgs::msg::PoseWithCovarianceStamped Convert (geometry_msgs_PoseWithCov
     dest_msg.pose = Convert(source_msg.pose);
     return dest_msg;
 }
+geometry_msgs_PoseWithCovarianceStamped Convert (geometry_msgs::msg::PoseWithCovarianceStamped &source_msg) {
+    geometry_msgs_PoseWithCovarianceStamped dest_msg;
+    dest_msg.header = Convert(source_msg.header);
+    dest_msg.pose = Convert(source_msg.pose);
+    return dest_msg;
+}
 
 geometry_msgs::msg::PoseWithCovariance Convert (geometry_msgs_PoseWithCovariance &source_msg) {
     geometry_msgs::msg::PoseWithCovariance dest_msg;
@@ -13,6 +19,13 @@ geometry_msgs::msg::PoseWithCovariance Convert (geometry_msgs_PoseWithCovariance
     std::copy(std::begin(source_msg.covariance), std::end(source_msg.covariance), dest_msg.covariance.begin());
     return dest_msg;
 }
+geometry_msgs_PoseWithCovariance Convert (geometry_msgs::msg::PoseWithCovariance &source_msg) {
+    geometry_msgs_PoseWithCovariance dest_msg;
+    dest_msg.pose = Convert(source_msg.pose);
+    std::copy(std::begin(source_msg.covariance), std::end(source_msg.covariance), dest_msg.covariance.begin());
+    return dest_msg;
+}
+
 
 geometry_msgs::msg::Quaternion Convert (geometry_msgs_Quaternion &source_msg) {
     geometry_msgs::msg::Quaternion dest_msg;

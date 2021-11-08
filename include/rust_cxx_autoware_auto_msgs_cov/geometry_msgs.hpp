@@ -11,26 +11,26 @@
 #include <rust_cxx_autoware_auto_msgs_cov/common.hpp>
 #include <rust_cxx_autoware_auto_msgs_cov/std_msgs.hpp>
 
-geometry_msgs::msg::PoseWithCovarianceStamped Convert(geometry_msgs_PoseWithCovarianceStamped &);
-geometry_msgs_PoseWithCovarianceStamped Convert(geometry_msgs::msg::PoseWithCovarianceStamped &);
+geometry_msgs::msg::PoseWithCovarianceStamped Convert(const geometry_msgs_PoseWithCovarianceStamped &);
+geometry_msgs_PoseWithCovarianceStamped Convert(const geometry_msgs::msg::PoseWithCovarianceStamped &);
 
-geometry_msgs::msg::PoseWithCovariance Convert(geometry_msgs_PoseWithCovariance &);
-geometry_msgs_PoseWithCovariance Convert(geometry_msgs::msg::PoseWithCovariance &);
+geometry_msgs::msg::PoseWithCovariance Convert(const geometry_msgs_PoseWithCovariance &);
+geometry_msgs_PoseWithCovariance Convert(const geometry_msgs::msg::PoseWithCovariance &);
 
-geometry_msgs::msg::Quaternion Convert(geometry_msgs_Quaternion &);
-geometry_msgs_Quaternion Convert(geometry_msgs::msg::Quaternion &);
+geometry_msgs::msg::Quaternion Convert(const geometry_msgs_Quaternion &);
+geometry_msgs_Quaternion Convert(const geometry_msgs::msg::Quaternion &);
 
-geometry_msgs::msg::Point Convert(geometry_msgs_Point &);
-geometry_msgs_Point Convert(geometry_msgs::msg::Point &);
+geometry_msgs::msg::Point Convert(const geometry_msgs_Point &);
+geometry_msgs_Point Convert(const geometry_msgs::msg::Point &);
 
-geometry_msgs::msg::Pose Convert(geometry_msgs_Pose &);
-geometry_msgs_Pose Convert(geometry_msgs::msg::Pose &);
+geometry_msgs::msg::Pose Convert(const geometry_msgs_Pose &);
+geometry_msgs_Pose Convert(const geometry_msgs::msg::Pose &);
 
-geometry_msgs_Transform Convert(geometry_msgs::msg::Transform &);
-geometry_msgs::msg::Transform Convert(geometry_msgs_Transform &);
+geometry_msgs_Transform Convert(const geometry_msgs::msg::Transform &);
+geometry_msgs::msg::Transform Convert(const geometry_msgs_Transform &);
 
-geometry_msgs_Vector3 Convert(geometry_msgs::msg::Vector3 &);
-geometry_msgs::msg::Vector3 Convert(geometry_msgs_Vector3 &);
+geometry_msgs_Vector3 Convert(const geometry_msgs::msg::Vector3 &);
+geometry_msgs::msg::Vector3 Convert(const geometry_msgs_Vector3 &);
 
-geometry_msgs_PoseStamped Convert(geometry_msgs::msg::PoseStamped &);
-geometry_msgs::msg::PoseStamped Convert(geometry_msgs_PoseStamped &);
+geometry_msgs_PoseStamped Convert(const geometry_msgs::msg::PoseStamped &);
+geometry_msgs::msg::PoseStamped Convert(const geometry_msgs_PoseStamped &);

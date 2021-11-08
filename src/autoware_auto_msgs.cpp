@@ -2,7 +2,7 @@
 #include <rust_cxx_autoware_auto_msgs_cov/autoware_auto_msgs.hpp>
 #include <vector>
 
-autoware_auto_msgs::msg::VehicleStateCommand Convert (autoware_auto_msgs_VehicleStateCommand &source_msg) {
+autoware_auto_msgs::msg::VehicleStateCommand Convert (const autoware_auto_msgs_VehicleStateCommand &source_msg) {
     autoware_auto_msgs::msg::VehicleStateCommand dest_msg;
     dest_msg.stamp = Convert(source_msg.stamp);
     dest_msg.blinker = source_msg.blinker;
@@ -15,7 +15,7 @@ autoware_auto_msgs::msg::VehicleStateCommand Convert (autoware_auto_msgs_Vehicle
     return dest_msg;
 }
 
-autoware_auto_msgs_VehicleStateCommand Convert (autoware_auto_msgs::msg::VehicleStateCommand &source_msg) {
+autoware_auto_msgs_VehicleStateCommand Convert (const autoware_auto_msgs::msg::VehicleStateCommand &source_msg) {
     autoware_auto_msgs_VehicleStateCommand dest_msg;
     dest_msg.stamp = Convert(source_msg.stamp);
     dest_msg.blinker = source_msg.blinker;
@@ -28,7 +28,7 @@ autoware_auto_msgs_VehicleStateCommand Convert (autoware_auto_msgs::msg::Vehicle
     return dest_msg;
 }
 
-autoware_auto_msgs::msg::VehicleControlCommand Convert (autoware_auto_msgs_VehicleControlCommand &source_msg) {
+autoware_auto_msgs::msg::VehicleControlCommand Convert (const autoware_auto_msgs_VehicleControlCommand &source_msg) {
     autoware_auto_msgs::msg::VehicleControlCommand dest_msg;
     dest_msg.stamp = Convert(source_msg.stamp);
     dest_msg.front_wheel_angle_rad = source_msg.front_wheel_angle_rad;
@@ -38,7 +38,7 @@ autoware_auto_msgs::msg::VehicleControlCommand Convert (autoware_auto_msgs_Vehic
     return dest_msg;
 }
 
-autoware_auto_msgs_VehicleKinematicState Convert (autoware_auto_msgs::msg::VehicleKinematicState &source_msg) {
+autoware_auto_msgs_VehicleKinematicState Convert (const autoware_auto_msgs::msg::VehicleKinematicState &source_msg) {
     autoware_auto_msgs_VehicleKinematicState dest_msg;
     dest_msg.state = Convert(source_msg.state);
     dest_msg.header = Convert(source_msg.header);
@@ -46,7 +46,7 @@ autoware_auto_msgs_VehicleKinematicState Convert (autoware_auto_msgs::msg::Vehic
     return dest_msg;
 }
 
-autoware_auto_msgs::msg::VehicleKinematicState Convert (autoware_auto_msgs_VehicleKinematicState &source_msg) {
+autoware_auto_msgs::msg::VehicleKinematicState Convert (const autoware_auto_msgs_VehicleKinematicState &source_msg) {
     autoware_auto_msgs::msg::VehicleKinematicState dest_msg;
     dest_msg.state = Convert(source_msg.state);
     dest_msg.header = Convert(source_msg.header);
@@ -54,7 +54,7 @@ autoware_auto_msgs::msg::VehicleKinematicState Convert (autoware_auto_msgs_Vehic
     return dest_msg;
 }
 
-autoware_auto_msgs_VehicleStateReport Convert (autoware_auto_msgs::msg::VehicleStateReport &source_msg) {
+autoware_auto_msgs_VehicleStateReport Convert (const autoware_auto_msgs::msg::VehicleStateReport &source_msg) {
     autoware_auto_msgs_VehicleStateReport dest_msg;
     dest_msg.stamp = Convert(source_msg.stamp);
     dest_msg.blinker = source_msg.blinker;
@@ -68,7 +68,7 @@ autoware_auto_msgs_VehicleStateReport Convert (autoware_auto_msgs::msg::VehicleS
     return dest_msg;
 }
 
-autoware_auto_msgs::msg::VehicleStateReport Convert (autoware_auto_msgs_VehicleStateReport  &source_msg) {
+autoware_auto_msgs::msg::VehicleStateReport Convert (const autoware_auto_msgs_VehicleStateReport  &source_msg) {
     autoware_auto_msgs::msg::VehicleStateReport dest_msg;
     dest_msg.blinker = source_msg.blinker;
     dest_msg.fuel = source_msg.fuel;
@@ -82,7 +82,7 @@ autoware_auto_msgs::msg::VehicleStateReport Convert (autoware_auto_msgs_VehicleS
     return dest_msg;
 }
 
-autoware_auto_msgs_TrajectoryPoint Convert (autoware_auto_msgs::msg::TrajectoryPoint &source_msg) {
+autoware_auto_msgs_TrajectoryPoint Convert (const autoware_auto_msgs::msg::TrajectoryPoint &source_msg) {
     autoware_auto_msgs_TrajectoryPoint dest_msg;
     dest_msg.acceleration_mps2 = source_msg.acceleration_mps2;
     dest_msg.front_wheel_angle_rad = source_msg.front_wheel_angle_rad;
@@ -97,7 +97,7 @@ autoware_auto_msgs_TrajectoryPoint Convert (autoware_auto_msgs::msg::TrajectoryP
     return dest_msg;
 }
 
-autoware_auto_msgs::msg::TrajectoryPoint Convert (autoware_auto_msgs_TrajectoryPoint &source_msg) {
+autoware_auto_msgs::msg::TrajectoryPoint Convert (const autoware_auto_msgs_TrajectoryPoint &source_msg) {
     autoware_auto_msgs::msg::TrajectoryPoint dest_msg;
     dest_msg.acceleration_mps2 = source_msg.acceleration_mps2;
     dest_msg.front_wheel_angle_rad = source_msg.front_wheel_angle_rad;
@@ -112,21 +112,21 @@ autoware_auto_msgs::msg::TrajectoryPoint Convert (autoware_auto_msgs_TrajectoryP
     return dest_msg;
 }
 
-autoware_auto_msgs_Complex32 Convert (autoware_auto_msgs::msg::Complex32 &source_msg) {
+autoware_auto_msgs_Complex32 Convert (const autoware_auto_msgs::msg::Complex32 &source_msg) {
     autoware_auto_msgs_Complex32 dest_msg;
     dest_msg.imag = source_msg.imag;
     dest_msg.real = source_msg.real;
     return dest_msg;
 }
 
-autoware_auto_msgs::msg::Complex32 Convert (autoware_auto_msgs_Complex32 &source_msg) {
+autoware_auto_msgs::msg::Complex32 Convert (const autoware_auto_msgs_Complex32 &source_msg) {
     autoware_auto_msgs::msg::Complex32 dest_msg;
     dest_msg.imag = source_msg.imag;
     dest_msg.real = source_msg.real;
     return dest_msg;
 }
 
-autoware_auto_msgs::msg::Trajectory Convert (autoware_auto_msgs_Trajectory &source_msg) {
+autoware_auto_msgs::msg::Trajectory Convert (const autoware_auto_msgs_Trajectory &source_msg) {
     autoware_auto_msgs::msg::Trajectory dest_msg;
     dest_msg.header = Convert(source_msg.header);
     dest_msg.points = rosidl_runtime_cpp::BoundedVector<autoware_auto_msgs::msg::TrajectoryPoint, 100>();
@@ -136,7 +136,7 @@ autoware_auto_msgs::msg::Trajectory Convert (autoware_auto_msgs_Trajectory &sour
     return dest_msg;
 }
 
-autoware_auto_msgs_Trajectory Convert (autoware_auto_msgs::msg::Trajectory &source_msg) {
+autoware_auto_msgs_Trajectory Convert (const autoware_auto_msgs::msg::Trajectory &source_msg) {
     autoware_auto_msgs_Trajectory dest_msg;
     
     dest_msg.header = Convert(source_msg.header);
@@ -150,7 +150,7 @@ autoware_auto_msgs_Trajectory Convert (autoware_auto_msgs::msg::Trajectory &sour
 }
 
 
-autoware_auto_msgs_HADMapRoute Covert (autoware_auto_msgs::msg::HADMapRoute &source_msg) {
+autoware_auto_msgs_HADMapRoute Covert (const autoware_auto_msgs::msg::HADMapRoute &source_msg) {
     autoware_auto_msgs_HADMapRoute dest_msg;
     dest_msg.header = Convert(source_msg.header);
     dest_msg.goal_point = Convert(source_msg.goal_point);
@@ -163,21 +163,21 @@ autoware_auto_msgs_HADMapRoute Covert (autoware_auto_msgs::msg::HADMapRoute &sou
     return dest_msg;
 }
 
-autoware_auto_msgs::msg::RoutePoint Convert (autoware_auto_msgs_RoutePoint &source_msg) {
+autoware_auto_msgs::msg::RoutePoint Convert (const autoware_auto_msgs_RoutePoint &source_msg) {
     autoware_auto_msgs::msg::RoutePoint dest_msg;
     dest_msg.heading = Convert(source_msg.heading);
     dest_msg.position = Convert(source_msg.position);
     return dest_msg;
 }
 
-autoware_auto_msgs_RoutePoint Convert (autoware_auto_msgs::msg::RoutePoint &source_msg) {
+autoware_auto_msgs_RoutePoint Convert (const autoware_auto_msgs::msg::RoutePoint &source_msg) {
     autoware_auto_msgs_RoutePoint dest_msg;
     dest_msg.heading = Convert(source_msg.heading);
     dest_msg.position = Convert(source_msg.position);
     return dest_msg;
 }
 
-autoware_auto_msgs::msg::HADMapSegment Convert (autoware_auto_msgs_HADMapSegment &source_msg) {
+autoware_auto_msgs::msg::HADMapSegment Convert (const autoware_auto_msgs_HADMapSegment &source_msg) {
     autoware_auto_msgs::msg::HADMapSegment dest_msg;
     dest_msg.preferred_primitive_id = source_msg.preferred_primitive_id;
     for (size_t i = 0; i < source_msg.primitives.size(); i++) {
@@ -186,7 +186,7 @@ autoware_auto_msgs::msg::HADMapSegment Convert (autoware_auto_msgs_HADMapSegment
     return dest_msg;
 }
 
-autoware_auto_msgs_HADMapSegment Convert (autoware_auto_msgs::msg::HADMapSegment &source_msg) {
+autoware_auto_msgs_HADMapSegment Convert (const autoware_auto_msgs::msg::HADMapSegment &source_msg) {
     autoware_auto_msgs_HADMapSegment dest_msg;
     dest_msg.preferred_primitive_id = source_msg.preferred_primitive_id;
     for (size_t i = 0; i < source_msg.primitives.size(); i++) {
